@@ -73,7 +73,7 @@ async fn handler(msg: Message) {
     let co = ChatOptions {
         restart: restart,
         system_prompt: Some(&system_prompt),
-        token_limit: 100,
+        token_limit: 4096,
         ..Default::default()
     };
 
